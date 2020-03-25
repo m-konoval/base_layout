@@ -1,0 +1,43 @@
+/* File for variables mixin and other options */
+
+/* ===== VARs ===== */
+:root {
+
+}
+
+// SIZE
+$w_xl: 1140px;
+$w_lg: 930px;
+$w_md: 690px;
+$w_sm: 510px;
+$w_xs: 300px;
+
+// PATHs
+$icons: '';
+
+/* ===== MIXIN & Functions ===== */
+@function rem($px) {
+  @return ($px / 16)+rem;
+}
+
+@mixin transition-all($time: .3s, $option: all) {
+  transition: $option $time;
+}
+
+@mixin customize-placeholder() {
+  &::-webkit-input-placeholder {
+    @content;
+  }
+
+  &::-moz-placeholder {
+    @content;
+  }
+
+  &:-ms-input-placeholder {
+    @content;
+  }
+
+  &:-moz-placeholder {
+    @content;
+  }
+}

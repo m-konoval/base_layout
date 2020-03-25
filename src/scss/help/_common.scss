@@ -1,0 +1,60 @@
+/* classes for often use & script's styles */
+
+._flex {
+  display: flex;
+}
+
+._col {
+  display: flex;
+  flex-direction: column;
+}
+
+._row {
+  @extend ._flex;
+  margin: 0 -15px;
+  padding: 0 15px;
+}
+
+.tab {
+  /* using with 'contentTabs' script */
+
+  & [data-tab-content] {
+    display: none;
+
+    &._tab-content-active {
+      display: block;
+    }
+  }
+}
+
+.ibg {
+  /* using with 'ibg' script */
+
+  background-size: cover;
+  background: no-repeat center;
+  position: relative;
+
+  img {
+    width: 0;
+    height: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+.block {
+  display: flex;
+  align-items: stretch;
+  width: 100%;
+
+  &__item {
+    flex: 1 0 0;
+  }
+}
+
+.container {
+  width: 100%;
+}

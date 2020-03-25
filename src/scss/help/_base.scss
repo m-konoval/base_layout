@@ -1,0 +1,53 @@
+/* base normalize style */
+
+/* ===== IMPORT ===== */
+
+/* ===== BASE ===== */
+* {
+  margin: 0;
+  padding: 0;
+  outline: none !important;
+}
+
+a {
+  background-color: transparent;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+header, main, footer, details {
+  display: block;
+}
+
+button {
+  background-color: transparent;
+  border-style: none;
+  box-shadow: none;
+  cursor: pointer;
+}
+
+button, input {
+  overflow: visible;
+}
+
+button, select {
+  text-transform: none;
+}
+
+button, [type="button"], [type="reset"], [type="submit"],
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+}
+
+[type="search"] {
+  -webkit-appearance: textfield;
+  outline-offset: -2px;
+}
+
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+[hidden] {
+  display: none;
+}
